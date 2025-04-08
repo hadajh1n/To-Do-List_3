@@ -8,4 +8,5 @@
     <color name="edt_color_hint">#6D6767</color>
     <color name="recyclerView_background">#16C5BFBF</color>
     <color name="tvRecyclerView">#615E5E40</color>
+    <color name="tvTo_Do_List">#F40707</color>
 </resources>
