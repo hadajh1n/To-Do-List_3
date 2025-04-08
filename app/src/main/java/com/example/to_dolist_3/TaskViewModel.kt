@@ -20,10 +20,9 @@ class TaskViewModel(private val dao: TaskDao) : ViewModel() {
         viewModelScope.launch {
             val updatedTask = task.copy(completed = !task.completed)
             dao.update(updatedTask)
-            // Если нужно удалять выполненные задачи, раскомментируй:
-            // if (updatedTask.completed) {
-            //     dao.delete(updatedTask)
-            // }
+            if (updatedTask.completed) {
+                dao.delete(updatedTask)
+            }
         }
     }
 }

@@ -28,20 +28,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val editInput = findViewById<EditText>(R.id.edt_input)
-            ?: run { // Защита от null
-                Toast.makeText(this, "EditText not found", Toast.LENGTH_LONG).show()
-                return
-            }
         val btnAdd = findViewById<Button>(R.id.btn_add)
-            ?: run {
-                Toast.makeText(this, "Button not found", Toast.LENGTH_LONG).show()
-                return
-            }
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
-            ?: run {
-                Toast.makeText(this, "RecyclerView not found", Toast.LENGTH_LONG).show()
-                return
-            }
 
         taskAdapter = TaskAdapter { task ->
             viewModel.toggleTaskCompletion(task)

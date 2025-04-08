@@ -18,6 +18,6 @@ interface TaskDao {
     @Update
     suspend fun update(task: Task)
 
-    @Delete // Добавлен для поддержки удаления
+    @Delete
     suspend fun delete(task: Task)
 }
