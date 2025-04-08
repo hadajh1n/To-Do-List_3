@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_add"
+    android:backgroundTint="@color/tvRecyclerView"
+    android:orientation="horizontal"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <CheckBox
+        android:id="@+id/taskCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/taskTitle"
+        style="@style/tvRecyclerView"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingVertical="10dp"
+        android:text="Введенная задачаладшыозвфыовожфыводжфоавоажвыдалоджфывлфылвоыфлдаодвыпдшываоыфаофылавыдпрылад"/>
+
+    <Button
+        android:id="@+id/delete_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

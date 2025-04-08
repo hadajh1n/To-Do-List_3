@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_main">#EFC8C8</color>
+    <color name="btn_color">#979CD4</color>
+    <color name="edt_input">#EDE6E6</color>
+    <color name="edt_color_hint">#6D6767</color>
+    <color name="recyclerView_background">#16C5BFBF</color>
+    <color name="tvRecyclerView">#615E5E40</color>
+</resources>
